@@ -1,0 +1,6 @@
+# Knight save data: id,name,maxHP,armor,hitMod,damageDie,xp
+1,Sir Lancelot,50,16,3,D8,100
+2,Sir Galahad,45,17,2,D6,80
+3,Sir Percival,55,15,4,D10,120
+4,Lady Elaine,40,14,5,D8,90
+5,Sir Gawain,48,16,3,D8,110

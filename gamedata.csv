@@ -1,0 +1,18 @@
+# Game data file
+# Format for fortunes: fortune,name,armor,hitModifier,hpBonus[,damageDie]
+# Format for monsters: monster,name,maxHP,armor,hitModifier,damageDie
+
+# Fortunes
+fortune,Sword of Flame,2,3,5,D8
+fortune,Shield of Light,5,0,10,D6
+fortune,Cloak of Shadows,1,4,3,D10
+fortune,Ring of Power,3,2,8,D12
+fortune,Helm of Valor,4,1,12,D6
+
+# Monsters
+monster,Goblin,15,12,1,D4
+monster,Orc,25,14,2,D6
+monster,Troll,40,15,1,D8
+monster,Dragon,60,18,4,D12
+monster,Skeleton,20,13,0,D6
+monster,Wolf,18,12,3,D4
