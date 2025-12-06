@@ -16,8 +16,12 @@ public class ConsoleView implements GameView {
     @Override
     public boolean checkContinue() {
         System.out.print("Continue? (y/n): ");
-        String response = in.nextLine().trim().toLowerCase();
-        return response.equals("y") || response.equals("yes");
+        if (in.hasNextLine()) {
+            String response = in.nextLine().trim().toLowerCase();
+            return response.equals("y") || response.equals("yes");
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -25,7 +29,11 @@ public class ConsoleView implements GameView {
         System.out.println("\n=== Main Menu ===");
         System.out.println("Commands: list, show <id>, active, setactive <id>, removeactive <id>, battle, fortunes, help, quit");
         System.out.print("> ");
-        return in.nextLine().trim();
+        if (in.hasNextLine()) {
+            return in.nextLine().trim();
+        } else {
+            return "quit";
+        }
     }
 
     @Override
